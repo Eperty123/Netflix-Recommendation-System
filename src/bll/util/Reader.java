@@ -3,12 +3,13 @@ package bll.util;
 import javafx.scene.control.Alert;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Reader {
     private File inputFile;
-    private List<String> inputLines;
-    private List<String> outputLines;
+    private List<String> inputLines = new ArrayList<>();
+    private List<String> outputLines = new ArrayList<>();
 
     public void loadFile(String path) {
         File file = new File(path);

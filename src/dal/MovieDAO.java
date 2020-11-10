@@ -1,6 +1,11 @@
-package bll;
+package dal;
 
+import bll.Movie;
 import bll.util.Reader;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class MovieDAO extends Reader {
 
@@ -24,4 +29,6 @@ public class MovieDAO extends Reader {
         }
         return null;
     }
+
+
 }

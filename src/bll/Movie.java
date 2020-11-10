@@ -46,4 +46,9 @@ public class Movie {
     public void setRating(int rating) {
         this.rating = rating;
     }
+
+    @Override
+    public String toString() {
+        return getId() + " : " + "(" + getYear() + ")" + " " + getName();
+    }
 }

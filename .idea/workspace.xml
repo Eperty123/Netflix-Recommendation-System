@@ -19,22 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="299bb227-29ab-41b5-bfba-1e1f8794fb3d" name="Default Changelist" comment="Model added">
-      <change afterPath="$PROJECT_DIR$/lib/javafx-base-16-ea+4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-controls-16-ea+4-win.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-controls-16-ea+4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-fxml-16-ea+4-win.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-fxml-16-ea+4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-graphics-16-ea+4-win.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-graphics-16-ea+4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data/movie_titles.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data/ratings.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data/users.txt" afterDir="false" />
+    <list default="true" id="299bb227-29ab-41b5-bfba-1e1f8794fb3d" name="Default Changelist" comment="Added Data">
+      <change afterPath="$PROJECT_DIR$/src/GUI/MovieRecView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bll/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bll/MovieModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/GUI/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/GUI/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/GUI/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/GUI/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/GUI/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/GUI/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/GUI/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/GUI/MovieModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/GUI/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/bll/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/bll/Movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/bll/MovieDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/bll/util/Reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Netflix-Recommendation-System/bll/util/Reader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/sample.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bll/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bll/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bll/MovieDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bll/MovieDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bll/MovieDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dal/MovieDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bll/util/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bll/util/Reader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,11 +71,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/GUI" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MIKEH\Documents\Skole\netflix\src\GUI" />
+      <recent name="C:\Users\MIKEH\Documents\Skole\netflix\src\Data" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
@@ -108,7 +115,7 @@
       <workItem from="1604915153648" duration="4412000" />
       <workItem from="1604993832752" duration="827000" />
       <workItem from="1604994885919" duration="547000" />
-      <workItem from="1605001630186" duration="324000" />
+      <workItem from="1605001630186" duration="5416000" />
     </task>
     <task id="LOCAL-00001" summary="Support for Win Libs. Kunne ikke få dine til at virke Carlo. Så addede dem jeg havde :D">
       <created>1604915828058</created>
@@ -131,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604993930659</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Data">
+      <created>1605001984920</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605001984920</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,13 +168,18 @@
     <MESSAGE value="Support for Win Libs. Kunne ikke få dine til at virke Carlo. Så addede dem jeg havde :D" />
     <MESSAGE value="Movie Class added" />
     <MESSAGE value="Model added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Model added" />
+    <MESSAGE value="Added Data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Data" />
   </component>
   <component name="WindowStateProjectService">
     <state x="176" y="116" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604915599158">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="176" y="116" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.920@0.0.1440.920" timestamp="1604915599158" />
+    <state x="526" y="164" key="#com.intellij.ide.util.MemberChooser" timestamp="1605006693310">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="526" y="164" key="#com.intellij.ide.util.MemberChooser/0.0.1440.920@0.0.1440.920" timestamp="1605006693310" />
     <state x="451" y="263" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1604915169600">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
@@ -169,22 +188,22 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="428" y="202" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1604995433019" />
-    <state width="698" height="236" key="GridCell.Tab.0.bottom" timestamp="1604956448355">
+    <state width="1397" height="236" key="GridCell.Tab.0.bottom" timestamp="1605007318095">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="698" height="236" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1604956448355" />
-    <state width="698" height="236" key="GridCell.Tab.0.center" timestamp="1604956448355">
+    <state width="1397" height="236" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1605007318095" />
+    <state width="1397" height="236" key="GridCell.Tab.0.center" timestamp="1605007318095">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="698" height="236" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1604956448355" />
-    <state width="698" height="236" key="GridCell.Tab.0.left" timestamp="1604956448355">
+    <state width="1397" height="236" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1605007318095" />
+    <state width="1397" height="236" key="GridCell.Tab.0.left" timestamp="1605007318095">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="698" height="236" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1604956448355" />
-    <state width="698" height="236" key="GridCell.Tab.0.right" timestamp="1604956448355">
+    <state width="1397" height="236" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1605007318095" />
+    <state width="1397" height="236" key="GridCell.Tab.0.right" timestamp="1605007318095">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="698" height="236" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1604956448355" />
+    <state width="1397" height="236" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1605007318095" />
     <state x="351" y="215" key="MultipleFileMergeDialog" timestamp="1604993956884">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
@@ -193,10 +212,10 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="201" y="35" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1604915661162" />
-    <state x="313" y="190" key="Vcs.Push.Dialog.v2" timestamp="1604917517180">
+    <state x="313" y="190" key="Vcs.Push.Dialog.v2" timestamp="1605002131896">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="313" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1604917517180" />
+    <state x="313" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1605002131896" />
     <state x="455" y="349" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604915343163">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
