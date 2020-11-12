@@ -2,7 +2,6 @@ package dal.dao;
 
 import dal.User;
 import dal.util.FileHandler;
-
 import java.util.ArrayList;
 import java.util.List;
 

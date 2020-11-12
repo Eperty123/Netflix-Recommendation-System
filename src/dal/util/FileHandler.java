@@ -1,7 +1,6 @@
 package dal.util;
 
 import javafx.scene.control.Alert;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collection;
