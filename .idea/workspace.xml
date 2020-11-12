@@ -64,7 +64,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
@@ -75,23 +75,19 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Carlo De Leon\Documents\GitHub\Netflix-Recommendation-System\src\dal" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\MIKEH\Documents\Skole\netflix\src\GUI" />
       <recent name="C:\Users\MIKEH\Documents\Skole\netflix\src\Data" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="GUI.Main" />
-      <module name="Netflix-Recommendation-System" />
-      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules javafx.controls,javafx.fxml --add-exports javafx.graphics/com.sun.javafx.sg.prism=ALL-UNNAMED" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -99,6 +95,14 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="GUI.Main" />
+      <module name="Netflix-Recommendation-System" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;lib&quot; --add-modules javafx.controls,javafx.fxml --add-exports javafx.graphics/com.sun.javafx.sg.prism=ALL-UNNAMED" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -172,54 +176,74 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added Data" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="176" y="116" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604915599158">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state x="235" y="132" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605210753328">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="176" y="116" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.920@0.0.1440.920" timestamp="1604915599158" />
+    <state x="235" y="132" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605210753328" />
     <state x="526" y="164" key="#com.intellij.ide.util.MemberChooser" timestamp="1605006693310">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="526" y="164" key="#com.intellij.ide.util.MemberChooser/0.0.1440.920@0.0.1440.920" timestamp="1605006693310" />
-    <state x="451" y="263" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1604915169600">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state x="601" y="300" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1605210751828">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="451" y="263" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.920@0.0.1440.920" timestamp="1604915169600" />
+    <state x="601" y="300" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605210751828" />
+    <state x="743" y="419" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605213001853">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="743" y="419" width="433" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1605213001853" />
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605210185734">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605210185734" />
+    <state x="690" y="271" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1605210680629">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="271" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605210680629" />
     <state x="428" y="202" key="FileChooserDialogImpl" timestamp="1604995433019">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="428" y="202" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1604995433019" />
-    <state width="1397" height="236" key="GridCell.Tab.0.bottom" timestamp="1605007318095">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1605213382988">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1397" height="236" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1605007318095" />
-    <state width="1397" height="236" key="GridCell.Tab.0.center" timestamp="1605007318095">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605213382988" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1605213382988">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1397" height="236" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1605007318095" />
-    <state width="1397" height="236" key="GridCell.Tab.0.left" timestamp="1605007318095">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605213382988" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1605213382988">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1397" height="236" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1605007318095" />
-    <state width="1397" height="236" key="GridCell.Tab.0.right" timestamp="1605007318095">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605213382988" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1605213382988">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1397" height="236" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1605007318095" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605213382988" />
     <state x="351" y="215" key="MultipleFileMergeDialog" timestamp="1604993956884">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="351" y="215" key="MultipleFileMergeDialog/0.0.1440.920@0.0.1440.920" timestamp="1604993956884" />
-    <state x="201" y="35" key="SettingsEditor" timestamp="1604915661162">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state x="268" y="40" key="SettingsEditor" timestamp="1605209961288">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="201" y="35" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1604915661162" />
+    <state x="268" y="40" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605209961288" />
     <state x="313" y="190" key="Vcs.Push.Dialog.v2" timestamp="1605002131896">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="313" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1605002131896" />
-    <state x="455" y="349" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604915343163">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state x="607" y="398" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1605209959090">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="455" y="349" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.920@0.0.1440.920" timestamp="1604915343163" />
+    <state x="607" y="398" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050@0.0.1920.1050" timestamp="1605209959090" />
     <state x="539" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604916461194">
       <screen x="0" y="0" width="1440" height="920" />
     </state>

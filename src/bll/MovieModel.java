@@ -1,6 +1,7 @@
 package bll;
 
-import dal.MovieDAO;
+import dal.Movie;
+import dal.dao.MovieDAO;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -12,13 +13,17 @@ public class MovieModel {
 
     }
 
+    public MovieDAO getMovieDAO() {
+        return movieDAO;
+    }
+
     public ObservableList<Movie> getMovies() {
         movieDAO.loadFile("src/Data/movie_titles.txt");
-        for (int i = 0; i < movieDAO.getInputLines().size()-1; i++){
-            String[] data = movieDAO.getInputLines().get(i).split(",");
-            Movie movie = new Movie(Integer.parseInt(data[0]), data[2], Integer.parseInt(data[1]));
-            movies.add(movie);
+        var movies = movieDAO.getMovies();
+        for (int i = 0; i < movies.size(); i++){
+            Movie movie = movies.get(i);
+            this.movies.add(movie);
         }
-        return movies;
+        return this.movies;
     }
 }

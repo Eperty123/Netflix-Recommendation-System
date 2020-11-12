@@ -1,4 +1,4 @@
-package bll.util;
+package dal.util;
 
 import javafx.scene.control.Alert;
 
