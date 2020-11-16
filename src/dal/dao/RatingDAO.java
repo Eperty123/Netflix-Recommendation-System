@@ -1,7 +1,9 @@
 package dal.dao;
 
+import dal.Movie;
 import dal.Rating;
 import dal.util.FileHandler;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,6 +35,7 @@ public class RatingDAO extends FileHandler {
                 var rating = Integer.parseInt(split[1]);
                 var user_id = Integer.parseInt(split[2]);
 
+                result.setRatingId(getAvailableId());
                 result.setMovieId(movie_id);
                 result.setUserId(user_id);
                 result.setRating(rating);
@@ -50,9 +53,19 @@ public class RatingDAO extends FileHandler {
 
     public void addRating(int movieId, int userId, int rating) {
         if (movieId != -1 && userId != -1) {
-            int new_id = ratings.size() + 1;
+            int new_id = getAvailableId();
             ratings.add(new Rating(movieId, userId, rating));
         }
+    }
+
+    public int getAvailableId() {
+        int id = 0;
+        for (Rating rating : ratings) {
+            if (rating.getRatingId() > id)
+                id = rating.getRatingId();
+        }
+        id++;
+        return id;
     }
 
     public void removeRating(int movieId) {

@@ -1,6 +1,7 @@
 package dal;
 
 public class Rating {
+    protected int id;
     protected int rating;
     protected int movieId;
     protected int userId;
@@ -27,6 +28,10 @@ public class Rating {
         return rating;
     }
 
+    public int getRatingId() {
+        return id;
+    }
+
     public int getMovieId() {
         return movieId;
     }
@@ -45,5 +50,9 @@ public class Rating {
 
     public void setUserId(int id) {
         this.userId = id;
+    }
+
+    public void setRatingId(int id) {
+        this.id = id;
     }
 }

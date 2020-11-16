@@ -1,7 +1,9 @@
 package dal.dao;
 
+import dal.Movie;
 import dal.User;
 import dal.util.FileHandler;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,6 +40,16 @@ public class UserDAO extends FileHandler {
         }
     }
 
+    public int getAvailableId() {
+        int id = 0;
+        for (User user : users) {
+            if (user.getId() > id)
+                id = user.getId();
+        }
+        id++;
+        return id;
+    }
+
     public User getUser(int id) {
         User result = new User();
         for (var user : users)
@@ -48,7 +60,7 @@ public class UserDAO extends FileHandler {
 
     public void adduser(String name, int year) {
         if (!name.isEmpty() && year > 0) {
-            int new_id = users.size() + 1;
+            int new_id = getAvailableId();
             users.add(new User(new_id, name));
         }
     }

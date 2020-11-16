@@ -1,9 +1,12 @@
 package bll;
 
-import dal.Movie;
+import dal.*;
+import dal.util.Helper;
+import dal.util.MessageBox;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
@@ -63,32 +66,44 @@ public class Controller implements Initializable {
     }
 
     public void handleAddMovie(ActionEvent actionEvent) {
-        int id = movieModel.getMovieDAO().getAvailableId();
-        var newMovie = new Movie();
-        newMovie.setId(id);
-        newMovie.setName(txtMovieTitle.getText());
-        newMovie.setYear(Integer.parseInt(txtMovieYear.getText()));
-        lstMovies.getItems().add(newMovie);
+        String movieTitleField = txtMovieTitle.getText();
+        String movieYearField = txtMovieYear.getText();
 
-        applyChanges();
+        if (movieTitleField != null && !movieTitleField.isEmpty() && Helper.IsNumber(movieYearField)) {
+
+            int id = movieModel.getMovieDAO().getAvailableId();
+            var newMovie = new Movie();
+            newMovie.setId(id);
+            newMovie.setName(txtMovieTitle.getText());
+            newMovie.setYear(Integer.parseInt(txtMovieYear.getText()));
+            lstMovies.getItems().add(newMovie);
+
+            applyChanges();
+        } else MessageBox.Show("Make sure all fields are filled out.", "Empty fields found", Alert.AlertType.ERROR);
 
     }
 
     public void handleUpdateMovie(ActionEvent actionEvent) {
-        if (selectedMovie != null) {
+
+        String movieTitleField = txtSelectedMovieTitle.getText();
+        String movieYearField = txtSelectedMovieYear.getText();
+
+        if (selectedMovie != null && movieTitleField != null && !movieTitleField.isEmpty()
+                && Helper.IsNumber(movieYearField)) {
             selectedMovie.setName(txtSelectedMovieTitle.getText());
+
             selectedMovie.setYear(Integer.parseInt(txtSelectedMovieYear.getText()));
             selectedMovie.setRating(currentRating);
-        }
+            applyChanges();
 
-        applyChanges();
+        } else MessageBox.Show("Make sure all fields are filled out.", "Empty fields found", Alert.AlertType.ERROR);
     }
 
     public void handleDeleteMovie(ActionEvent actionEvent) {
         if (selectedMovie != null && !lstMovies.getSelectionModel().isEmpty()) {
             lstMovies.getItems().remove(selectedMovie);
+            applyChanges();
         }
-        applyChanges();
     }
 
     public void handleSearchUser(KeyEvent keyEvent) {

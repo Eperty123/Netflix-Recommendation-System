@@ -54,6 +54,6 @@ public class Movie {
 
     @Override
     public String toString() {
-        return getId() + " : " + "(" + getYear() + ")" + " " + getName();
+        return String.format("%d: (%d) %s", getId(), getYear(), getName());
     }
 }

@@ -2,6 +2,7 @@ package dal.dao;
 
 import dal.Movie;
 import dal.util.FileHandler;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -55,7 +56,7 @@ public class MovieDAO extends FileHandler {
 
     public void addMovie(String name, int year) {
         if (!name.isEmpty() && year > 0) {
-            int new_id = movies.size() + 1;
+            int new_id = getAvailableId();
             movies.add(new Movie(new_id, name, year));
         }
     }
@@ -70,14 +71,11 @@ public class MovieDAO extends FileHandler {
 
     public int getAvailableId() {
         int id = 0;
-/*
         for (Movie movie : movies) {
             if (movie.getId() > id)
                 id = movie.getId();
         }
-*/
-
-        id = movies.size();
+        id++;
         return id;
     }
 

@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bll.Controller">
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bll.Controller">
    <top>
       <VBox alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
          <children>
@@ -39,7 +39,7 @@
                </VBox.margin>
             </Label>
             <TextField fx:id="txtMovieSearch" onKeyTyped="#handleSearchMovie" promptText="search movies" />
-            <ListView fx:id="lstMovies" onMouseClicked="#getSelection" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+            <ListView fx:id="lstMovies" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#getSelection" VBox.vgrow="ALWAYS" />
          </children>
          <BorderPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" />
@@ -53,13 +53,19 @@
                <VBox.margin>
                   <Insets bottom="5.0" />
                </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
             </Label>
             <TextField fx:id="txtUserSearch" onKeyTyped="#handleSearchUser" promptText="Search user" />
-            <ListView fx:id="lstUsers"  prefHeight="100.0" />
-            <Label text="User rate selected movie:">
+            <ListView fx:id="lstUsers" prefHeight="100.0" />
+            <Label text="Rating" textAlignment="CENTER">
                <VBox.margin>
                   <Insets top="5.0" />
                </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
             </Label>
             <HBox alignment="CENTER" spacing="5.0">
                <children>
@@ -79,10 +85,13 @@
                   <Insets bottom="10.0" top="10.0" />
                </padding>
             </HBox>
-            <Label maxWidth="1.7976931348623157E308" text="Movie recommendations:">
+            <Label maxWidth="1.7976931348623157E308" text="Movie recommendations">
                <VBox.margin>
                   <Insets bottom="5.0" top="5.0" />
                </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
             </Label>
             <ListView fx:id="lstRecommendedMovies" prefHeight="200.0" />
          </children>
@@ -94,7 +103,10 @@
    <left>
       <VBox spacing="5.0" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Create Movie" />
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Create Movie" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
             <HBox maxWidth="1.7976931348623157E308" spacing="5.0">
                <children>
                   <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Titel" HBox.hgrow="ALWAYS" />
@@ -109,7 +121,10 @@
             </HBox>
             <Button alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#handleAddMovie" text="Add movie!" textAlignment="CENTER" />
             <Separator prefWidth="200.0" />
-            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Selected Movie:" />
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Selected Movie" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
             <HBox spacing="5.0">
                <children>
                   <Label text="Titel" />
@@ -124,8 +139,8 @@
             </HBox>
             <HBox>
                <children>
-                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleUpdateMovie" text="Update" HBox.hgrow="ALWAYS" />
-                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleDeleteMovie" text="Delete" HBox.hgrow="ALWAYS" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleUpdateMovie" text="Update" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleDeleteMovie" text="Delete" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
                </children>
             </HBox>
          </children>
