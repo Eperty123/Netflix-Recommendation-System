@@ -1,12 +1,15 @@
 package dal.util;
 
 import javafx.scene.control.Alert;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class Database {
     protected String host;
-    protected int port;
+
+    // Default port is mysql.
+    protected int port = 3306;
     protected String database;
     protected String username;
     protected String password;
@@ -15,11 +18,8 @@ public class Database {
 
 
     public void connect() {
-
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection(String.format("jdbc:mysql://%s/%s", host, database), username, password);
-            //Statement stmt = con.createStatement();
+            connection = DriverManager.getConnection(String.format("jdbc:mysql://%s:%d/%s", host, port, database), username, password);
         } catch (Exception e) {
             MessageBox.Show(String.format("Connect exception: %s", e.getMessage()), "Connect exception", Alert.AlertType.ERROR);
         }
