@@ -39,6 +39,8 @@ public class RatingDAO extends FileHandler {
                 result.setMovieId(movie_id);
                 result.setUserId(user_id);
                 result.setRating(rating);
+
+                ratings.add(result);
             }
         }
     }
@@ -66,6 +68,10 @@ public class RatingDAO extends FileHandler {
         }
         id++;
         return id;
+    }
+
+    public List<Rating> getRatings() {
+        return ratings;
     }
 
     public void removeRating(int movieId) {

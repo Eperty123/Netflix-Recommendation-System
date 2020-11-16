@@ -59,6 +59,9 @@ public class Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         lstMovies.setItems(movieModel.getMovies());
+        //lstMovies.setItems(movieModel.getRatings());
+
+        //MessageBox.Show(String.format("%d", movieModel.getRatings().size()), "FF", Alert.AlertType.INFORMATION);
     }
 
 
